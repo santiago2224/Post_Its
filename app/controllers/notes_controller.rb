@@ -42,7 +42,7 @@ class NotesController < ApplicationController
   private
 
   def note_params
-  pramas.require(:note).permit(:title, description)
+    pramas.require(:note).permit(:title, description)
   end
 
 end
