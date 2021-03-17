@@ -2,7 +2,7 @@ class NotesController < ApplicationController
   def index
     @notes = Note.all
 
-    render component: "Note", props: {notes: @notes}
+    render component: "Notes", props: {notes: @notes}
   end
 
   def show
@@ -42,7 +42,7 @@ class NotesController < ApplicationController
   private
 
   def note_params
-    pramas.require(:note).permit(:title, description)
+    params.require(:note).permit(:title, description)
   end
 
 end

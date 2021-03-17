@@ -19,7 +19,7 @@ const Notes = (props) => {
         <span>Post It</span>
       </header>
       <div>
-        {renderNotes}
+        {renderNotes()}
       </div>
     </div>
   )
